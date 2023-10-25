@@ -64,6 +64,6 @@ app.post('/paymenturl', (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(port, "0.0.0.0", function () {
+  console.log(`Server listening on port ${port}`);
 });
